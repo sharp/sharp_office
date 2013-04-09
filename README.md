@@ -1,6 +1,6 @@
 # SharpOffice
 
-TODO: Write a gem description
+Convert office document to pdf and swf
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+SharpOffice.process('/path/to/document')
 
 ## Contributing
 
