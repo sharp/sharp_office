@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift File.dirname(__FILE__)
 
 require 'logger'
-require "sharp_office/version"
-require "sharp_office/office"
+require File.join(File.dirname(__FILE__), "sharp_office/version")
+require File.join(File.dirname(__FILE__), "sharp_office/office")
 
 module SharpOffice
   def self.logger=(log)

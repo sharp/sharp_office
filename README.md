@@ -2,6 +2,14 @@
 
 Convert office document to pdf and swf
 
+## Requirements
+
+### Swftools
+
+### OpenOffice
+
+### ImageMagick
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,7 +26,13 @@ Or install it yourself as:
 
 ## Usage
 
-SharpOffice.process('/path/to/document')
+``` ruby
+require 'rubygems'
+require 'sharp_office'
+SharpOffice.process('/Users/apple/Documents/test.doc')
+=> {:status=>"ok", :pdf_path=>"/Users/apple/Documents/test-doc.pdf", :swf_path=>"/Users/apple/Documents/test-doc.swf", :cover_path=>"/Users/apple/Documents/test-doc.png"} 
+
+```
 
 ## Contributing
 
