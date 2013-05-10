@@ -6,19 +6,23 @@
 
 ### Swftools
 
-  sudo add-apt-repository ppa:guilhem-fr/swftools
-  sudo apt-get update
-  sudo apt-get install swftools
+    sudo add-apt-repository ppa:guilhem-fr/swftools
+  
+    sudo apt-get update
+  
+    sudo apt-get install swftools
 
 ### LibreOffice
 　 
-  sudo add-apt-repository ppa:libreoffice/ppa 
-  sudo apt-get update
-  sudo apt-get install libreoffice
+    sudo add-apt-repository ppa:libreoffice/ppa 
+  
+    sudo apt-get update
+    
+    sudo apt-get install libreoffice
 
 ### ImageMagick
 
-  sudo apt-get install imagemagick libmagickcore-dev
+    sudo apt-get install imagemagick libmagickcore-dev
 
 ## Installation
 

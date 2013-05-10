@@ -11,6 +11,4 @@ before_install:
   - sudo apt-get clean
   - wget http://www.swftools.org/swftools-0.9.1.tar.gz
   - sh -c "tar xzvf swftools-0.9.1.tar.gz && cd swftools-0.9.1 && ./configure && make && sudo make install"
-  - wget http://pecl.php.net/get/gmagick-1.1.0RC2.tgz
-  - tar -xzf gmagick-1.1.0RC2.tgz
-  - sh -c "cd gmagick-1.1.0RC2 && phpize && ./configure --with-gmagick=/usr/local && make && sudo make install"
+  
