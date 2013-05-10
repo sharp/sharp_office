@@ -6,9 +6,19 @@ Convert office document to pdf and swf
 
 ### Swftools
 
-### OpenOffice
+  sudo add-apt-repository ppa:guilhem-fr/swftools
+  sudo apt-get update
+  sudo apt-get install swftools
+
+### LibreOffice
+　 
+  sudo add-apt-repository ppa:libreoffice/ppa 
+  sudo apt-get update
+  sudo apt-get install libreoffice
 
 ### ImageMagick
+
+  sudo apt-get install imagemagick libmagickcore-dev
 
 ## Installation
 
@@ -27,9 +37,12 @@ Or install it yourself as:
 ## Usage
 
 ``` ruby
-require 'rubygems'
 require 'sharp_office'
+
 SharpOffice.process('/Users/apple/Documents/test.doc')
+=> {:status=>"ok", :pdf_path=>"/Users/apple/Documents/test-doc.pdf", :swf_path=>"/Users/apple/Documents/test-doc.swf", :cover_path=>"/Users/apple/Documents/test-doc.png"} 
+
+SharpOffice.process('/Users/apple/Documents/test.doc', {pages: '1-20'})
 => {:status=>"ok", :pdf_path=>"/Users/apple/Documents/test-doc.pdf", :swf_path=>"/Users/apple/Documents/test-doc.swf", :cover_path=>"/Users/apple/Documents/test-doc.png"} 
 
 ```

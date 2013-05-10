@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 1.9.2
+  - 1.9.3
+  - 2.0.0
+script: bundle exec rspec spec
+before_install:
+  - sudo add-apt-repository ppa:guilhem-fr/swftools
+  - sudo apt-get update
+  - sudo apt-get install swftools
+  - sudo add-apt-repository ppa:libreoffice/ppa 
+  - sudo apt-get update
+  - sudo apt-get install libreoffice
+  - sudo apt-get install imagemagick libmagickcore-dev

@@ -12,34 +12,28 @@ describe SharpOffice do
     end
     it "should convert doc successfully" do
       @response = SharpOffice.process(File.expand_path("spec/fixture/test.doc"))
-      @response[:status].should == 'ok'
-      File.exist?(@response[:pdf_path]).should be_true
-      File.exist?(@response[:swf_path]).should be_true
-      File.exist?(@response[:cover_path]).should be_true
+      @response.should be_converted_successfully
     end
 
     it "should convert ppt successfully" do
       @response = SharpOffice.process(File.expand_path("spec/fixture/test.ppt"))
-      @response[:status].should == 'ok'
-      File.exist?(@response[:pdf_path]).should be_true
-      File.exist?(@response[:swf_path]).should be_true
-      File.exist?(@response[:cover_path]).should be_true
+      @response.should be_converted_successfully
+
     end
 
     it "should convert xls successfully" do
       @response = SharpOffice.process(File.expand_path("spec/fixture/test.xls"))
-      @response[:status].should == 'ok'
-      File.exist?(@response[:pdf_path]).should be_true
-      File.exist?(@response[:swf_path]).should be_true
-      File.exist?(@response[:cover_path]).should be_true
+      @response.should be_converted_successfully
     end
     
     it "should convert docx successfully" do
       @response = SharpOffice.process(File.expand_path("spec/fixture/test.docx"))
-      @response[:status].should == 'ok'
-      File.exist?(@response[:pdf_path]).should be_true
-      File.exist?(@response[:swf_path]).should be_true
-      File.exist?(@response[:cover_path]).should be_true
+      @response.should be_converted_successfully
+    end
+
+    it "should convert docx with params successfully" do
+      @response = SharpOffice.process(File.expand_path("spec/fixture/test.docx"), {pages: '1-20'})
+      @response.should be_converted_successfully
     end
   end
 end

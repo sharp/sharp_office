@@ -8,15 +8,16 @@ module SharpOffice
     attr_reader :path, :pdf_path, :swf_path
     include Singleton
 
-    def start(path)
+    def start(path, options)
       @path = File.expand_path(path)
       system_or_exit convert_to_pdf
       swfile = FlashTool::FlashObject.new(pdf_path)
+      swfile.pages(options[:pages])
       swfile.save(swf_path)
       system_or_exit "convert #{pdf_path} #{temp_file_path}"
 
       image = MiniMagick::Image.open(temp_file_path)
-      image.resize "100x100"
+      image.resize "300x300"
       image.write cover_path
 
       File.delete(temp_file_path)

@@ -17,7 +17,9 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
+  gem.add_dependency "mini_magick"
+  gem.add_dependency "flash_tool"
+
   gem.add_development_dependency "rspec", "~> 2.13.0"
-  gem.add_development_dependency "mini_magick"
-  gem.add_development_dependency "flash_tool"
+  
 end
