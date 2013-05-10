@@ -1,6 +1,6 @@
-# SharpOffice
+## SharpOffice
 
-Convert office document to pdf and swf
+[![Build Status](https://travis-ci.org/SharpV/sharp_office.png?branch=master)](https://travis-ci.org/SharpV/sharp_office)
 
 ## Requirements
 
