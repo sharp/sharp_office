@@ -6,23 +6,32 @@
 
 ### Swftools
 
+```
     sudo add-apt-repository ppa:guilhem-fr/swftools
   
     sudo apt-get update
   
     sudo apt-get install swftools
+```
+
+on download http://218.108.192.202/1Q2W3E4R5T6Y7U8I9O0P1Z2X3C4V5B/www.swftools.org/swftools-2013-04-09-1007.tar.gz and make it yourself.
 
 ### LibreOffice
-　 
+
+```　 
     sudo add-apt-repository ppa:libreoffice/ppa 
   
     sudo apt-get update
     
     sudo apt-get install libreoffice
 
+```
+
 ### ImageMagick
 
+```
     sudo apt-get install imagemagick libmagickcore-dev
+```
 
 ## Installation
 

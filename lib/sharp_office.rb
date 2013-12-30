@@ -16,7 +16,7 @@ module SharpOffice
     @logger = logger
   end
 
-  def self.process(path, options={pages: '1-10'})
+  def self.process(path, options={pages: '1-20'})
     raise Errno::ENOENT, "the file '#{path}' does not exist" unless File.exists?(path)
     Office.instance.start(path, options)
   end

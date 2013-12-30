@@ -18,8 +18,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency "mini_magick"
-  gem.add_dependency "flash_tool"
-
   gem.add_development_dependency "rspec", "~> 2.13.0"
   
 end
