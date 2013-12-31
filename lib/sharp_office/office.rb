@@ -35,7 +35,7 @@ module SharpOffice
     end
 
     def convert_to_cover
-      "convert #{pdf_path} #{cover_path}"
+      "convert #{pdf_path}[0] #{cover_path}"
     end
 
     def pdf_path
